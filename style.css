@@ -277,6 +277,14 @@ textarea {
         margin: 20px;
     }
 
+    .header a {
+        font-size: 10px
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
     .left-panel {
         margin: 20px;
     }
