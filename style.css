@@ -210,12 +210,20 @@ textarea {
 
 
 
-/* Phone: 480px */
+/* Phone: 320px */
 @media screen and (max-width:320px){
 
     .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         margin: 20px;
     }
+
+    textarea {
+        font-size: 16px;
+    }
+
 
     .left-panel {
         margin: 20px;
@@ -275,14 +283,21 @@ textarea {
 
     .header {
         margin: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .header a {
-        font-size: 10px
+        font-size: 12px
     }
 
     .logo {
         font-size: 20px;
+    }
+
+    textarea {
+        font-size: 16px;
     }
 
     .left-panel {
