@@ -270,6 +270,66 @@ textarea {
 }
 
 
+/* Phone: 480px */
+@media screen and (max-width:480px){
+
+    .header {
+        margin: 20px;
+    }
+
+    .left-panel {
+        margin: 20px;
+    }
+
+    .instructions {
+        align-self: center;
+    }
+
+    .buttons {
+        width: 400px;
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        margin: 0px 20px;
+    }
+
+    .btn-encrypt {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        
+    }
+
+    .btn-decrypt {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .message-box {
+        display: flex;
+        justify-content: center;
+    }
+
+    .message{
+        flex: 3;
+    }
+
+    .copy {
+        width: 360px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .message-box {
+        margin: 20px;
+    }
+ 
+}
+
+
 /* Tablet: 768px */
 @media screen and (max-width:768px) {
 
