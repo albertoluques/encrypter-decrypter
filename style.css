@@ -211,7 +211,7 @@ textarea {
 
 
 /* Phone: 480px */
-@media screen and (max-width:480px){
+@media screen and (max-width:320px){
 
     .header {
         margin: 20px;
