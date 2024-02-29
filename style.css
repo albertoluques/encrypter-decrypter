@@ -208,15 +208,7 @@ textarea {
 /* responsive design */
 /* Fix transition */
 
-@media screen and (max-width:1920px){
-    .header,
-    .left-panel,
-    .message-box {
-        transition: .5s;
-        margin: 20px
-    }
 
-}
 
 /* Phone: 480px */
 @media screen and (max-width:480px){
