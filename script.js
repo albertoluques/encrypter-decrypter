@@ -10,6 +10,7 @@ function buttonEncrypt(){
     message.value = encryptText;
     textArea.value = "";
     message.style.backgroundImage = "none";
+    message.style.backgroundColor = "#7dd0cc"
 }
 
 // Encrypt function
@@ -79,4 +80,7 @@ function buttonCopy() {
 
     navigator.clipboard.writeText(copyText.value);
     console.log("Copied the text: " + copyText.value);
+
+    message.style.backgroundColor = "#84d07d"
+    message.value = "";
   } 
