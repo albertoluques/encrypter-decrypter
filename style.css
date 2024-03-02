@@ -13,8 +13,8 @@ body {
     background-color: #eff0f3;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
-    width: 100%;
-    height: 100vh;
+    /* width: 100%;
+    height: 100vh; */
     flex-wrap: wrap;
 }
 
@@ -211,7 +211,7 @@ textarea {
 
 
 
-/* Phone: 320px */
+/* Phone: 320px
 @media screen and (max-width:320px){
 
     .header {
@@ -276,11 +276,16 @@ textarea {
         margin: 20px;
     }
  
-}
+} */
 
 
 /* Phone: 480px */
 @media screen and (max-width:480px){
+
+    body {
+        height: fit-content;
+        width: auto;
+    }
 
     .header {
         margin: 20px;
@@ -303,6 +308,10 @@ textarea {
 
     .left-panel {
         margin: 20px;
+    }
+
+    .message-left {
+        height: 500px;
     }
 
     .instructions {
