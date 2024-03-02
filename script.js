@@ -12,6 +12,8 @@ function buttonEncrypt(){
     message.style.backgroundImage = "none";
 }
 
+// Encrypt function
+
 function encrypt(encryptString){
     let keywordCode = [
         ["e", "enter"],
@@ -30,4 +32,29 @@ function encrypt(encryptString){
     return encryptString;
 }
 
+// Decrypt function
 
+function buttonDecrypt(){
+    const decryptText = decrypt(textArea.value)
+    message.value = decryptText;
+    textArea.value = "";
+    message.style.backgroundImage = "none";
+}
+
+function decrypt(decryptString){
+    let keywordCode = [
+        ["e", "enter"],
+        ["i", "imes"],
+        ["a", "ai"],
+        ["o", "ober"],
+        ["u", "ufat"]
+    ];
+    decryptString = decryptString.toLowerCase();
+
+    for(let i = 0; i < keywordCode.length; i++){
+        if(decryptString.includes(keywordCode[i][1])){
+            decryptString = decryptString.replaceAll(keywordCode[i][1], keywordCode[i][0])
+        }
+    }
+    return decryptString;
+}
