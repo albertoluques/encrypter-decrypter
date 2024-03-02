@@ -58,6 +58,7 @@ body {
 
 .encrypt-section {
     display: flex;
+    flex-wrap: wrap;
     flex-direction:column ;
     flex: 2;
     margin: 0 25px;
@@ -66,6 +67,7 @@ body {
 
 .decrypt-section {
     display: flex;
+    flex-wrap: wrap;
     flex: 1;
     flex-direction: column;
     margin: 0 25px;
@@ -78,6 +80,11 @@ body {
     background-color: #84d07d;
     background-position: center;
     background-size: 10em;
+}
+
+#textarea-bg, ::placeholder {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 18px;
 }
 
 .textarea {
@@ -95,8 +102,8 @@ textarea {
     outline: none;
     box-shadow: 2px 3px 5px #2729292d;
     color: #3e4943;
-    font-family: 'Courier New', sans-serif;
-
+    font-family: "Press Start 2P", system-ui;
+    font-size: 18px;
 }
 
 ::placeholder{
@@ -192,6 +199,7 @@ colors{
         display: flex;
         justify-content: space-between;
         margin-bottom: 25px;
+        min-width: 0;
     }
 
     body {
@@ -204,12 +212,13 @@ colors{
         display: flex;
         flex: 2;
         justify-content: center;
+        align-content: center;
+        min-width: 0;
     }
 
     .encrypt-section {
         flex: 2;
-        height: 700px;
-        
+        height: 700px;    
     }
 
     .decrypt-section {
@@ -220,11 +229,17 @@ colors{
     textarea {
         font-size: 18px;
         font-family:'Courier New', Courier, sans-serif;
+        min-width: 0;
     } 
 
 
     #textarea-bg {
         background-image: none;
+    }
+
+    .footer {
+        display: flex;
+        min-width: 0;
     }
 }
 
