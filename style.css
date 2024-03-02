@@ -1,377 +1,177 @@
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sixtyfour:SCAN@-6&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=VT323&display=swap');
 
 
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    touch-action: manipulation;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    background-color: #eff0f3;
 }
 
 body {
-    background-color: #eff0f3;
-    font-family: 'Roboto', sans-serif;
-    font-size: 25px;
-    /* width: 100%;
-    height: 100vh; */
-    flex-wrap: wrap;
-}
-
-.master-container {
     display: flex;
-    flex-flow: column wrap;
-    width: 100%;
-    height: 100vh;
+    flex-direction: column;
 }
 
-
-.container {
+header {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    padding: 40px 0;
-    flex: 2;
-}
-
-.left-panel {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    align-content: stretch;
-    flex: 2;
-    gap: 10px;
-    flex-basis: 480px;
-
-
-    background-color: white;
-    margin: 0 100px;
-    padding: 20px 20px;
-    border-radius: 15px;
-}
-
-.left-botton {
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
-
-}
-
-.message-left {
-    flex: 1;
-    
-}
-
-.instructions {
-    display: flex;
-    gap: 10px;
-    font-size: 13px;
-    align-items: center;
-    padding-bottom: 8px;
-    justify-content: flex-start;
-}
-
-.message-icon {
-    border-radius: 50px;
-    background-color: #f0954f7a;
-    width: 20px;
-    height: 20px;
-    font-weight: 400;
-    font-size: 15px;
-
-    display: flex;
-    flex-shrink: 0;
-    justify-content: center;
-    align-items: center;
-}
-
-.header {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
     justify-content: space-between;
-
-    margin: 20px 100px;
-    color: #0d0d0d;
+    align-items: center;
+    margin: 25px 25px 40px 25px;
 }
 
-.header a {
+header a {
     font-size: 18px;
-}
-
-.logo {
-    font-family:"VT323","Roboto",sans-serif;
-    font-size: 32px;
-}
-
-a {
     text-decoration: none;
     color: #0d0d0d;
 }
 
-a:hover{
-    transition: .2s;
-    color: #f0944f;
+a:hover {
+    transition: .3s;
+    color:#f0944f;
 }
 
-
-/* button style */
-.btn-encrypt {
-    background-color: #f0944f;
-    padding: 10px 102px;
+body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
 }
 
-.btn-decrypt {
-    padding: 8px 100px;
-    border: 2px solid #f0944f;
+.container {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.encrypt-section {
+    display: flex;
+    flex-direction:column ;
+    flex: 2;
+    margin: 0 25px;
+    padding-bottom: 24px ;
+}
+
+.decrypt-section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 0 25px;
+    padding-bottom: 24px;
+}
+
+#textarea-bg {
+    background-image: url(./images/icons/Search.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+    background-size: 10em;
+}
+
+.textarea {
+    flex: 2;
+}
+
+textarea {
+    border: none;
+    resize: none;
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 25px ;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
 }
 
 .buttons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    flex-flow: row wrap;
-    margin-bottom: 30px;
-    gap: 10px 10px;
-    
+    gap: 20px; 
 }
 
-
-
-/* button reset */
-button {
-    display: flex;
-    gap: 8px;
-    border: none;
-    box-shadow: none;
-    border-radius: 5px;
-    font-weight: 600;
+h6 {
     font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 8px;
 }
 
-/* Encrypt box text */
-.message-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    flex: 1;
-    gap: 20px;
-    flex-basis: 480px;
-
-    background-color: white;
-
-    background-color: white;
-    margin: 0 100px;
-    padding: 20px 20px 50px 20px;
-    border-radius: 15px;
-    
-}
-
-.message {
-  flex: 1;
-  padding: 20px;  
-}
-
-
-.copy {
-    display: flex;
-    align-self: center;
-    padding: 8px 100px;
-    border: 2px solid #f0944f;
-}
-
-/* reset style */
-
-textarea {
+.btn-encrypt {
     border: none;
-    overflow: auto;
-    outline: none;
-
-    box-shadow: none;
-    resize: none;
-    padding: 20px;
+    background-color:#f0944f;
+    border-radius: 15px;
+    width: 300px;
+    height: 50px;
 }
 
-/* footer */
+.btn-decrypt {
+    border: 5px  solid #f0944f;
+    border-radius: 15px;
+    width: 300px;
+    height: 50px;
+}
+
+.btn-copy {
+    border: 5px  solid #f0944f;
+    border-radius: 15px;
+    width: 300px;
+    height: 50px;
+    align-self: center;
+}
+
+
 .footer {
     display: flex;
     justify-content: center;
     background-color: #c0c0c2;
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-
+    font-size: 18px;
+    padding: 18px;
 }
 
 
-
-/* responsive design */
-/* Fix transition */
-
-
-
-/* Phone: 320px
-@media screen and (max-width:320px){
-
-    .header {
+@media screen and (max-width: 470px) {
+    
+    header {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        margin: 20px;
+        margin-bottom: 20px;
     }
-
-    textarea {
-        font-size: 16px;
-    }
-
-
-    .left-panel {
-        margin: 20px;
-    }
-
-    .instructions {
-        align-self: center;
-    }
-
-    .buttons {
-        width: 400px;
-        display: flex;
-        justify-content: center;
-    }
-
-    button {
-        margin: 0px 20px;
-    }
-
-    .btn-encrypt {
-        display: flex;
-        flex: 1;
-        justify-content: center;
-        
-    }
-
-    .btn-decrypt {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-    }
-
-    .message-box {
-        display: flex;
-        justify-content: center;
-    }
-
-    .message{
-        flex: 3;
-    }
-
-    .copy {
-        width: 360px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .message-box {
-        margin: 20px;
-    }
- 
-} */
-
-
-/* Phone: 480px */
-@media screen and (max-width:480px){
 
     body {
-        height: fit-content;
-        width: auto;
-    }
-
-    .header {
-        margin: 20px;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        width: 100%;
+        height: 150%;
     }
 
-    .header a {
-        font-size: 12px
-    }
-
-    .logo {
-        font-size: 20px;
-    }
-
-    textarea {
-        font-size: 16px;
-    }
-
-    .left-panel {
-        margin: 20px;
-    }
-
-    .message-left {
-        height: 500px;
-    }
-
-    .instructions {
-        align-self: center;
-    }
-
-    .buttons {
-        width: 400px;
+    .container {
         display: flex;
-        justify-content: center;
+        flex: 2;
     }
 
-    button {
-        margin: 0px 20px;
+    .encrypt-section {
+        flex: 2;
+        height: 800px;
     }
 
-    .btn-encrypt {
-        display: flex;
+    .decrypt-section {
         flex: 1;
-        justify-content: center;
-        
+        height: 400px;
     }
 
-    .btn-decrypt {
-        flex: 1;
-        display: flex;
-        justify-content: center;
+    .textarea {
     }
 
-    .message-box {
-        display: flex;
-        justify-content: center;
+    #textarea-bg {
+        background-image: none;
     }
-
-    .message{
-        flex: 3;
-    }
-
-    .copy {
-        width: 360px;
-        display: flex;
-        justify-content: center;
-    }
-
-    .message-box {
-        margin: 20px;
-    }
- 
-}
-
-
-/* Tablet: 768px */
-@media screen and (max-width:768px) {
-
-    .left-panel {
-        margin: 20px;
-    }
-
-    .message-box {
-        margin: 20px;
-    }
-
 }
