@@ -82,5 +82,7 @@ function buttonCopy() {
     console.log("Copied the text: " + copyText.value);
 
     message.style.backgroundColor = "#84d07d"
+    message.style.backgroundImage = "url(./images/icons/Search.png)"
     message.value = "";
+
   } 
