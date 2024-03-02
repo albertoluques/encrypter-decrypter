@@ -7,45 +7,31 @@
         <title>Text Encrypt</title>
     </head>
     <body>
-        <section class="master-container">
+        <header>
+            <h1 class="logo">Encrypt/Decrypt</h1>
+            <a href="https://www.linkedin.com/in/alberto-luque-fve/">About Me</a>
+        </header>
 
-            <header class="header">
-                <p class="logo">Encrypt/Decrypt_</p> 
-                <a href="https://www.linkedin.com/in/alberto-luque-fve/" target="_blank" rel="noopener noreferrer">About Me</a>
-            </header>
-            <div class="container">
-                
-                <div class="left-panel">
-                    <textarea class="message-left" placeholder="Type your text here for Encryption"></textarea>
-                    
-                    <div class="left-botton">
-                        <div class="instructions">
-                            <p class="message-icon">!</p>
-                            <p>Only lowercase text without special characters*</p>
-                    </div>
-                    <div class="buttons">
-                        <button class="btn-encrypt"><img src="./images/icons/lock.png" height="18px" width="20px" alt="lock"> <p>Encrypt</p></button>
-                        <button class="btn-decrypt"><img src="./images/icons/unlock.png" height="18px" width="20px" alt="unlock"> <p>Decrypt</p></button>
-                    </div>
-
-
+        <main class="container">
+            <section class="encrypt-section">
+                <textarea class="textarea" placeholder="Place text here for Encrypt"></textarea>
+                <div>
+                    <h6>Only lowercase and no special characters*</h6>
                 </div>
-
-                
-                
-
-            </div>
-                <!-- This is the right side panel (encrypt) -->
-                <div class="message-box">
-                    <textarea class="message" placeholder=""></textarea>
-                    <button class="copy">Copy</button>
+                <div class="buttons">   
+                    <button class="btn-encrypt">Encrypt</button>
+                <button class="btn-decrypt">Decrypt</button>
                 </div>
-                
-            </div>
-            <div class="footer">
-                Alberto Luque &copy 2024.
-            </div>
-        </section>
+            </section>
+            <section class="decrypt-section">
+                <textarea id="textarea-bg" class="textarea"></textarea>
+                <button class="btn-copy">Copy</button>
+            </section>
+        </main>
+
+        <footer class="footer">
+            Alberto Luque &copy 2024.
+        </footer>
 
             <script src="./javascript.js"></script>
     </body>
