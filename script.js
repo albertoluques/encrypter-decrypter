@@ -62,6 +62,21 @@ function decrypt(decryptString){
 
 // Copy button function
 
-function buttonCopy(){
-    
-}
+// function buttonCopy(){
+//     var text = document.getElementById(".decrypt-textarea");
+// navigator.clipboard.writeText(text).then(function() {
+//   console.log('Async: Copying to clipboard was successful!');
+// }, function(err) {
+//   console.error('Async: Could not copy text: ', err);
+// });
+// }
+
+function buttonCopy() {
+    let copyText = document.getElementById("textarea");
+
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+
+    navigator.clipboard.writeText(copyText.value);
+    console.log("Copied the text: " + copyText.value);
+  } 
