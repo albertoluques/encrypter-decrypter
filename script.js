@@ -58,3 +58,10 @@ function decrypt(decryptString){
     }
     return decryptString;
 }
+
+
+// Copy button function
+
+function buttonCopy(){
+    
+}
