@@ -14,17 +14,17 @@
 
         <main class="container">
             <section class="encrypt-section">
-                <textarea class="textarea" placeholder="Place text here for Encrypt"></textarea>
+                <textarea id="encrypt-textarea" class="textarea" placeholder="Place text here for Encrypt"></textarea>
                 <div>
                     <h6>Only lowercase and no special characters*</h6>
                 </div>
                 <div class="buttons">   
-                    <button class="btn-encrypt">Encrypt</button>
+                    <button id="encrypt-button" class="btn-encrypt" onclick="buttonEncrypt()">Encrypt</button>
                 <button class="btn-decrypt">Decrypt</button>
                 </div>
             </section>
             <section class="decrypt-section">
-                <textarea id="textarea-bg" class="textarea"></textarea>
+                <textarea id="textarea-bg" class="textarea decrypt-textarea"></textarea>
                 <button class="btn-copy">Copy</button>
             </section>
         </main>
@@ -33,6 +33,6 @@
             Alberto Luque &copy 2024.
         </footer>
 
-            <script src="./javascript.js"></script>
+            <script src="./script.js"></script>
     </body>
 </html>
