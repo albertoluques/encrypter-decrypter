@@ -10,7 +10,8 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
     font-size: 24px;
-    background-color: #eff0f3;
+    background-color: #c4bebb;
+    color: #272929;
 }
 
 body {
@@ -25,15 +26,20 @@ header {
     margin: 25px 25px 40px 25px;
 }
 
+.logo {
+    color: #494786;
+    font-weight: bolder;
+}
+
 header a {
     font-size: 18px;
     text-decoration: none;
-    color: #0d0d0d;
+    color: #494786;
 }
 
 a:hover {
     transition: .3s;
-    color:#f0944f;
+    color:#9a2257;
 }
 
 body {
@@ -69,27 +75,38 @@ body {
 #textarea-bg {
     background-image: url(./images/icons/Search.png);
     background-repeat: no-repeat;
-    background-color: white;
+    background-color: #84d07d;
     background-position: center;
     background-size: 10em;
 }
 
 .textarea {
     flex: 2;
+    border:20px solid #928c89 ;
 }
 
 textarea {
     border: none;
     resize: none;
-    background-color: white;
+    background-color: #84d07d;
     margin-bottom: 25px;
     padding: 25px;
     border-radius: 25px ;
     outline: none;
+    box-shadow: 2px 3px 5px #2729292d;
+    color: #494786;
+    font-family: 'Courier New', sans-serif;
+
+}
+
+::placeholder{
+    color: #494786;
 }
 
 button {
     cursor: pointer;
+    font-weight: bold;
+    box-shadow: 2px 3px 5px #2729292d;
 }
 
 .buttons {
@@ -104,25 +121,27 @@ h6 {
     font-weight: 400;
     text-align: center;
     padding-bottom: 8px;
+    color: #494786;
 }
 
 .btn-encrypt {
     border: none;
-    background-color:#f0944f;
+    background-color:#9a2257;
     border-radius: 15px;
     width: 300px;
     height: 50px;
+    color: #c4bebb;
 }
 
 .btn-decrypt {
-    border: 5px  solid #f0944f;
+    border: 3px  solid #9a2257;
     border-radius: 15px;
     width: 300px;
     height: 50px;
 }
 
 .btn-copy {
-    border: 5px  solid #f0944f;
+    border: 3px  solid #9a2257;
     border-radius: 15px;
     width: 300px;
     height: 50px;
@@ -133,12 +152,23 @@ h6 {
 .footer {
     display: flex;
     justify-content: center;
-    background-color: #c0c0c2;
+    background-color: #928c89;
     font-size: 18px;
     padding: 18px;
 }
 
+/* color code for version 2 */
+colors{
+    color: #84d07d;
+    color: #272929;
+    color: #c4bebb;
+    color: #494786; 
+    color: #9a2257;
+}
 
+
+/* Responsive layouts */
+/* Phone */
 @media screen and (max-width: 470px) {
     
     header {
@@ -174,6 +204,22 @@ h6 {
         font-size: 18px;
         font-family:'Courier New', Courier, sans-serif;
     } 
+
+
+    #textarea-bg {
+        background-image: none;
+    }
+}
+
+/* Tablet */
+
+@media screen and (max-width: 768px){
+    .container {
+        transition: .2s;
+        display: flex;
+        flex-direction: column;
+    }
+
 
     #textarea-bg {
         background-image: none;
