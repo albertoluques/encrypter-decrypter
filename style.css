@@ -74,7 +74,7 @@ body {
     padding-bottom: 24px;
 }
 
-#textarea-bg {
+#textarea {
     background-image: url(./images/icons/Search.png);
     background-repeat: no-repeat;
     background-color: #84d07d;
@@ -82,7 +82,7 @@ body {
     background-size: 10em;
 }
 
-#textarea-bg, ::placeholder {
+#textarea, ::placeholder {
     font-family: "Press Start 2P", system-ui;
     font-size: 14px;
 }
@@ -185,7 +185,7 @@ colors{
     }
 
 
-    #textarea-bg {
+    #textarea {
         background-image: none;
     }
 }
@@ -231,7 +231,7 @@ colors{
     } 
 
 
-    #textarea-bg {
+    #textarea {
         background-image: none;
     }
 
