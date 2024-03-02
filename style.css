@@ -156,17 +156,24 @@ h6 {
     .container {
         display: flex;
         flex: 2;
+        justify-content: center;
     }
 
     .encrypt-section {
         flex: 2;
         height: 700px;
+        
     }
 
     .decrypt-section {
         flex: 1;
         height: 400px;
     }
+
+    textarea {
+        font-size: 18px;
+        font-family:'Courier New', Courier, sans-serif;
+    } 
 
     #textarea-bg {
         background-image: none;
