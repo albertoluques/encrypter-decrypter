@@ -40,6 +40,7 @@ function buttonDecrypt(){
     message.value = decryptText;
     textArea.value = "";
     message.style.backgroundImage = "none";
+    message.style.backgroundColor = "#7dd0cc"
 }
 
 function decrypt(decryptString){
