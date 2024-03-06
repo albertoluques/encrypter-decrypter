@@ -161,19 +161,37 @@ h6 {
 .footer {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #928c89;
     font-size: 18px;
     padding: 18px;
+    gap: 10px;
+}
+.github {
+    background-color: #928c89;
 }
 
-/* color code for version 2 */
+footer a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #272929;
+    background-color: #928c89;
+    cursor: pointer;
+}
+
+a:hover {
+    transition: .3s;
+    color:#9a2257;
+}   
+/* color code for version 2
 colors{
     color: #84d07d;
     color: #272929;
+    color: #3e4943;
     color: #c4bebb;
     color: #494786; 
     color: #9a2257;
-}
+} */
 
 
 /* Responsive layouts */
@@ -242,5 +260,3 @@ colors{
         min-width: 0;
     }
 }
-
-
