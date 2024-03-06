@@ -45,9 +45,9 @@ function buttonDecrypt(){
 
 function decrypt(decryptString){
     let keywordCode = [
-        ["e", "enter"],
-        ["i", "imes"],
         ["a", "ai"],
+        ["i", "imes"],
+        ["e", "enter"],
         ["o", "ober"],
         ["u", "ufat"]
     ];
