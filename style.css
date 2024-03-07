@@ -112,7 +112,7 @@ textarea {
     color: #3e4943;
     font-family: "Press Start 2P", 'Courier New', Courier, sans-serif;
     font-size: 14px;
-    /* text-transform: lowercase; */
+    text-transform: lowercase;
 }
 
 ::placeholder{
