@@ -14,18 +14,18 @@
 
         <main class="container">
             <section class="encrypt-section">
-                <textarea type="text" id="encrypt-textarea" class="textarea" placeholder="Place text here for Encrypt"></textarea>
+                <textarea type="text" id="encrypt-textarea" class="textarea" placeholder="Please insert your text here for encryption."></textarea>
                 <div>
                     <h6>Only lowercase and no special characters*</h6>
                 </div>
                 <div class="buttons">   
-                    <button id="encrypt-button" class="btn-encrypt" onclick="buttonEncrypt()">Encrypt</button>
-                <button class="btn-decrypt" onclick="buttonDecrypt()">Decrypt</button>
+                    <button id="encrypt-button" class="btn-encrypt button" onclick="buttonEncrypt()">Encrypt</button>
+                <button class="btn-decrypt button" onclick="buttonDecrypt()">Decrypt</button>
                 </div>
             </section>
             <section class="decrypt-section">
                 <textarea type="text" id="textarea" class="textarea decrypt-textarea" placeholder="No message found :(" readonly></textarea>
-                <button class="btn-copy" onclick="buttonCopy()">Copy</button>
+                <button class="btn-copy button" onclick="buttonCopy()">Copy</button>
             </section>
         </main>
 
