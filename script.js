@@ -87,3 +87,6 @@ function buttonCopy() {
 
   } 
 
+function toLower() {
+    toLower.value = toLower.value.toLowerCase();
+}
