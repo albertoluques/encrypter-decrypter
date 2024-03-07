@@ -87,6 +87,6 @@ function buttonCopy() {
 
   } 
 
-function toLower() {
-    toLower.value = toLower.value.toLowerCase();
+function toLower(forcedLower) {
+    forcedLower.value = forcedLower.value.toLowerCase();
 }
